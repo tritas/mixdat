@@ -12,7 +12,7 @@ To install Mixed Data Tools & Models, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install mdtm
+    $ pip install mixdat
 
 This is the preferred method to install Mixed Data Tools & Models, as it will always install the most recent stable release.
 
@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/tritas/mdtm
+    $ git clone git://github.com/tritas/mixdat
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/tritas/mdtm/tarball/master
+    $ curl  -OL https://github.com/tritas/mixdat/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/tritas/mdtm
-.. _tarball: https://github.com/tritas/mdtm/tarball/master
+.. _Github repo: https://github.com/tritas/mixdat
+.. _tarball: https://github.com/tritas/mixdat/tarball/master

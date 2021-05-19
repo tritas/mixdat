@@ -10,10 +10,10 @@ import torch.optim as optim
 from sklearn.base import BaseEstimator
 from sklearn.base import TransformerMixin
 
-from kantar.config import seed
 from ..features.standardizer import MixedDataStandardizer
 
 logger = logging.getLogger(__name__)
+seed = 42
 th.manual_seed(seed)
 has_cuda = th.cuda.is_available()
 device = th.device("cuda" if has_cuda else "cpu")
@@ -61,7 +61,6 @@ def _new_layer(input_dim, output_dim, activation, dropout=0, noise_scale=0, bn=F
 
 
 class GaussianNoiseSampler(nn.Module):
-
     def __init__(self, scale=0.01, inplace=False):
         super(GaussianNoiseSampler, self).__init__()
         if scale < 0:
@@ -97,18 +96,18 @@ class MixedAutoencoder(nn.Module, BaseEstimator, TransformerMixin):
     - high-cardinality categorical"""
 
     def __init__(
-            self,
-            features_dtypes,
-            vocab_sizes,
-            hidden_dims,
-            embedding_thr,
-            embedding_func=LOG_EMBEDDING_FUNC,
-            input_dropout=0.2,
-            latent_dropout=0.5,
-            noise_scale=0.1,
-            batch_norm=True,
-            tie_weights=False,
-            activation=nn.LeakyReLU(negative_slope=0.1, inplace=True),
+        self,
+        features_dtypes,
+        vocab_sizes,
+        hidden_dims,
+        embedding_thr,
+        embedding_func=LOG_EMBEDDING_FUNC,
+        input_dropout=0.2,
+        latent_dropout=0.5,
+        noise_scale=0.1,
+        batch_norm=True,
+        tie_weights=False,
+        activation=nn.LeakyReLU(negative_slope=0.1, inplace=True),
     ):
         """
 

@@ -5,7 +5,7 @@ from tempfile import mkdtemp
 import numpy as np
 import pandas as pd
 import pytest
-from kantar.models.th_training import train_torch_model
+from mixdat.models.th_training import train_torch_model
 
 tmpdir = mkdtemp()
 logging.basicConfig(level=logging.DEBUG)
@@ -18,33 +18,20 @@ hidden = 5
 lr = 0.2
 
 # Dummy FFQ dataframe
-orig_cols = [
-    "semaine",
-    "codepanier",
-    "household",
+sample_cols = [
+    "user",
+    "session",
+    "weight",
     "product",
-    "qts",
-    "circuit",
-    "centraleachat",
-    "codeshopachat",
-    "jour",
-    "mois",
+    "marketplace",
+    "day",
+    "week",
+    "month",
 ]
-projected_cols = [
-    "semaine",
-    "codepanier",
-    "household",
-    "circuit",
-    "centraleachat",
-    "codeshopachat",
-    "jour",
-    "mois",
-]
-sizes = [52, 11, 3, vocab_size, 13, 14, 15, 16, 31, 12]
+sizes = [1000, 1000, 1, vocab_size, 10, 31, 52, 12]
 
-# TODO: Define fit data
+# TODO: Define fit & transform data
 fit_data = []
-# TODO: Define transform data
 transform_data = []
 
 

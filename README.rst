@@ -3,19 +3,19 @@ Mixed Data Tools & Models
 =========================
 
 
-.. image:: https://img.shields.io/pypi/v/mdtm.svg
-        :target: https://pypi.python.org/pypi/mdtm
+.. image:: https://img.shields.io/pypi/v/mixdat.svg
+        :target: https://pypi.python.org/pypi/mixdat
 
-.. image:: https://img.shields.io/travis/tritas/mdtm.svg
-        :target: https://travis-ci.org/tritas/mdtm
+.. image:: https://img.shields.io/travis/tritas/mixdat.svg
+        :target: https://travis-ci.org/tritas/mixdat
 
-.. image:: https://readthedocs.org/projects/mdtm/badge/?version=latest
-        :target: https://mdtm.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/mixdat/badge/?version=latest
+        :target: https://mixdat.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/tritas/mdtm/shield.svg
-     :target: https://pyup.io/repos/github/tritas/mdtm/
+.. image:: https://pyup.io/repos/github/tritas/mixdat/shield.svg
+     :target: https://pyup.io/repos/github/tritas/mixdat/
      :alt: Updates
 
 
@@ -24,7 +24,7 @@ Machine learning on mixed data.
 
 
 * Free software: BSD license
-* Documentation: https://mdtm.readthedocs.io.
+* Documentation: https://mixdat.readthedocs.io.
 
 
 Features

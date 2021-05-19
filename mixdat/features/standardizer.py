@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 
 
 class MixedDataStandardizer(TransformerMixin):
-
     def __init__(self, errors="ignore", inplace=False):
         self.sizes = {}
         self.types = None

@@ -3,8 +3,8 @@
 """Top-level package for Mixed Data Tools & Models."""
 
 __author__ = """Aris Tritas"""
-__email__ = 'a.tritas@gmail.com'
-__version__ = '0.0.1'
+__email__ = "a.tritas@gmail.com"
+__version__ = "0.0.1"
 
 
 def setup_module(module):
@@ -14,7 +14,7 @@ def setup_module(module):
     import random
 
     # It could have been provided in the environment
-    _random_seed = os.environ.get('RANDOM_SEED', None)
+    _random_seed = os.environ.get("RANDOM_SEED", None)
     if _random_seed is None:
         _random_seed = np.random.uniform() * (2 ** 31 - 1)
     _random_seed = int(_random_seed)
