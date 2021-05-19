@@ -4,7 +4,7 @@
 
 __author__ = """Aris Tritas"""
 __email__ = "a.tritas@gmail.com"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 
 def setup_module(module):
